@@ -8,70 +8,73 @@
 </head>
 <body>
     <!-- ! Шапка -->
-    <header>
+    <header class="header">
+        <!-- верхний блок шапки -->
         <div class="wrapper-top">
-            <address class="address">
-                <a href="https://goo.gl/maps/dMAG4Qt1BvaufG799 " target="_blank" >Dąbrówka Wielkopolska, ul. Główna 53, 66-210 Zbąszynek</a>
+            <address class="main-address">
+                <a class="main-addres__link" href="https://goo.gl/maps/dMAG4Qt1BvaufG799 " target="_blank" >Dąbrówka Wielkopolska, ul. Główna 53, 66-210 Zbąszynek</a>
             </address>
-            <ul class="user-list">
-                <li>
-                    <a href="mailto:"> dorotapawezka@gmail.com</a>
+            <ul class="wrapper-top__list">
+                <li class="wrapper-top__item">
+                    <img class="wrapper-top__icon" src="./images/mail-svg.svg" alt="мыло">
+                    <a class="wrapper-top__link" href="mailto:"> dorotapawezka@gmail.com</a>
                 </li>
-                <li>
-                    <a href="tel">+48695716531</a>
+                <li class="wrapper-top__item">
+                    <img class="wrapper-top__icon" src="./images/telephone-svg.svg" alt="телефон">
+                    <a class="wrapper-top__link" href="tel">+48695716531</a>
                 </li>
             </ul>
         </div>
-
+        <!-- нижний блок шапки -->
         <div class="wrapper-bot">
             <a class="logo" href="">  
-                <img src="" alt="тут картинка">
+                <img class="logo__icon" src="./images/logo__icon.png" alt="тут картинка">
             </a>
             <nav class="navigation">
-                <ul>
-                <li> 
-                    <a href="index.html">Strona główna</a>
+                <ul class="navigation__list">
+                <li class="navigation__item"> 
+                    <a class="navigation_link" href="index.html">Strona główna</a>
                 </li>
-                <li> 
-                    <a href="onas.html">O nas</a>
+                <li class="navigation__item"> 
+                    <a class="navigation_link" href="onas.html">O nas</a>
                 </li>
-                <li> 
-                    <a href="projekty.html">Projekty</a>
+                <li class="navigation__item"> 
+                    <a class="navigation_link" href="projekty.html">Projekty</a>
                 </li>
-                <li> 
-                    <a href="instalacja.html">Instalacja</a>
+                <li class="navigation__item"> 
+                    <a class="navigation_link" href="instalacja.html">Instalacja</a>
                 </li>
-                <li> 
-                    <a href="kontakt.html">Kontakt</a>
+                <li class="navigation__item"> 
+                    <a class="navigation_link" href="kontakt.html">Kontakt</a>
                 </li>
                 </ul>
             </nav>
         </div>
     </header>
-    <main>
+    <main class="main">
         <section class="start-screen">
-            <h1 class="main-title">
+            <h1 class="start-screen__title">
             Panele Fotowoltaiczne
             </h1>
-            <p class="slogan">
+            <p class="start-screen__subtitle">
                 Kompleksowe usługi w zakresie montażu i podłączenia paneli słonecznych.
             </p>
             <button class="btn">
-                <span>Obliczyć koszt</span>
+                <span class="btn__text">Obliczyć koszt</span>
             </button>
             <button class="btn-scroll">
                 <svg width="16px" height="20px"></svg>
             </button>
         </section>
 
-        <section class="main">
-            <img src="" alt="домик">
+        <section class="content">
+            <img class="content__img" src="./images/html__main-icon.png" alt="домик">
 
-            <div class="main-txt">
-                <h2 class="title">
+            <div class="main-content">
+                <h2 class="main-content__title">
                     Ty i twói dom
                 </h2>
-                <p>Zrównoważony rozwój zaczyna się w domu od Ciebie i Twojej rodziny.
+                <p class="main-content__text">Zrównoważony rozwój zaczyna się w domu od Ciebie i Twojej rodziny.
                 Codzienne dokonywane przez ciebie wybory - zarówno duże, jak i małe
                 mają ogromny wpływ na środowisko.
                 
@@ -86,35 +89,48 @@
     </main>
 
     <!-- ! Подвал  -->
-    <footer>
-        <div class="wrapper-top">
-            <a href="#" >
-                <img src="" alt="logo">
+    <footer class="footer">
+        <div class="wrap-top">
+            <a class="logo footer__logo" href="#" >
+                <img class="logo__icon" src="./images/logo__icon.png" alt="logo">
             </a>
-            <nav class="navigation">
-            <ul>
-                <li>
-                    <a href="index.html">Strona główna</a>
+            <nav class="navigation footer__navigation">
+            <ul class="navigation__list footer__navigation__list">
+                <li class="navigation__item">
+                    <a class="navigation__link" href="index.html">Strona główna</a>
                 </li>
-                <li>
-                    <a href="onas.html">O nas</a>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="onas.html">O nas</a>
                 </li>
-                <li>
-                    <a href="projekty.html">Projekty</a>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="projekty.html">Projekty</a>
                 </li>
-                <li>
-                    <a href="instalacja.html">Instalacja</a>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="instalacja.html">Instalacja</a>
                 </li>
-                <li>
-                    <a href="kontakt.html">Kontakt</a>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="kontakt.html">Kontakt</a>
                 </li>
             </ul>
             </nav>
-            <button class="btn btn-dark"> <span>Oddzwoń</span> </button>
+            <button class="btn btn-dark"> 
+                <span class="btn__text">Oddzwoń</span> 
+            </button>
         </div>
-        <div class="wrapper-bot">
-            <a href=""> Polityka prywatności</a>
-            <a href=""> Ochrona danych osobowych</a>
+        <div class="wrap-bot">
+            <a class="wrap-bot__link" href=""> Polityka prywatności</a>
+            <a class="wrap-bot__link" href=""> Ochrona danych osobowych</a>
+        </div>
+
+        <!-- Модальное окно  -->
+        <div class="modal-calculator">
+            <button> <img src="./images/close-svg.svg" alt=""> </button>
+            <img src="./images/modal-third-svg.svg" alt="галочка">
+            <h2 class="modal-calculator__title"> Dziękuję za twoją prośbę </h2>
+            <p class="modal-calculator__subtitle">Nasz menedżer wkrótce się z Tobą skontaktuje</p>
+            <button class="btn">
+                <span> Ok</span>
+            </button>
         </div>
     </footer>
 </body>
