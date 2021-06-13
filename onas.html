@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Strona główna</title>
 </head>
 
@@ -19,11 +20,15 @@
             </address>
             <ul class="wrapper-top__list">
                 <li class="wrapper-top__item">
-                    <img class="wrapper-top__icon" src="./images/mail-svg.svg" alt="мыло">
+                    <svg class="wrapper-top__icon">
+                        <use href="./images/sprite.svg#icon-mail-svg"></use>
+                    </svg>
                     <a class="wrapper-top__link" href="mailto:"> dorotapawezka@gmail.com</a>
                 </li>
                 <li class="wrapper-top__item">
-                    <img class="wrapper-top__icon" src="./images/telephone-svg.svg" alt="телефон">
+                    <svg class="wrapper-top__icon">
+                        <use xlink:href="./images/sprite.svg#icon-telephone-svg"></use>
+                    </svg>
                     <a class="wrapper-top__link" href="tel">+48695716531</a>
                 </li>
             </ul>
@@ -31,62 +36,12 @@
         <!-- нижний блок шапки -->
         <div class="wrapper-bot">
             <a class="logo" href="">
-                <img class="logo__icon" src="" alt="тут картинка">
+                <img class="logo__icon" src="./images/logo-icon.png" alt="тут картинка">
             </a>
             <nav class="navigation">
                 <ul class="navigation__list">
                     <li class="navigation__item">
-                        <a class="navigation_link" href="index.html">Strona główna</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a class="navigation_link" href="onas.html">O nas</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a class="navigation_link" href="projekty.html">Projekty</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a class="navigation_link" href="instalacja.html">Instalacja</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a class="navigation_link" href="kontakt.html">Kontakt</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main class="main">
-        <section class="start-screen start-screen--second">
-            <img src="./images/bg-aboutus.png" alt="">
-            <h1 class="start-screen__title start-screen_title--second">
-                O nas
-            </h1>
-        </section>
-        <section class="content content--second">
-            <p class="content__subtitle content__subtitle--second">Jako firma Foton-Tech zapewniamy kompleksową obsługę od zaprojektowania systemu poprzez dostarczanie urządzeń
-                po ich
-                instalację oraz przyłączenie do sieci.
-    
-                Pomagamy w załatwieniu wszystkich potrzebnych dokumentów i formalnośći
-                związanych z przyłączeniem instalacji do sieci eneregtycznej
-            </p>
-            <p class="content__subtitle content__subtitle--second">Zadowolenie naszych Klientów jest dla nas sprawą najważaniejszą, dlatego też dokładamy wszelkich starań, aby
-                zamówienia
-                były realizowane błyskawicznie, a oferowany towar był najwyższej jakości.
-            </p>
-        </section>
-    </main>
-
-    <!-- ! Подвал  -->
-    <footer class="footer">
-        <div class="wrap-top">
-            <a class="logo footer__logo" href="#">
-                <img class="logo__icon" src="./images/logo__icon.png" alt="logo">
-            </a>
-            <nav class="navigation footer__navigation">
-                <ul class="navigation__list footer__navigation__list">
-                    <li class="navigation__item">
-                        <a class="navigation__link" href="index.html">Strona główna</a>
+                        <a class="navigation__link navigation__link--active" href="index.html">Strona główna</a>
                     </li>
                     <li class="navigation__item">
                         <a class="navigation__link" href="onas.html">O nas</a>
@@ -102,7 +57,57 @@
                     </li>
                 </ul>
             </nav>
-            <button class="btn btn-dark">
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="start-screen start-screen--second">
+            <img src="./images/bg-aboutus.jpg" alt="домик">
+            <h1 class="start-screen__title start-screen_title--second">
+                O nas
+            </h1>
+        </section>
+        <section class="content content--second">
+            <p class="content__subtitle ">Jako firma Foton-Tech zapewniamy kompleksową obsługę od zaprojektowania systemu poprzez dostarczanie urządzeń
+                po ich
+                instalację oraz przyłączenie do sieci.
+    
+                Pomagamy w załatwieniu wszystkich potrzebnych dokumentów i formalnośći
+                związanych z przyłączeniem instalacji do sieci eneregtycznej
+            </p>
+            <p class="content__subtitle ">Zadowolenie naszych Klientów jest dla nas sprawą najważaniejszą, dlatego też dokładamy wszelkich starań, aby
+                zamówienia
+                były realizowane błyskawicznie, a oferowany towar był najwyższej jakości.
+            </p>
+        </section>
+    </main>
+
+    <!-- ! Подвал  -->
+    <footer class="footer">
+        <div class="wrap-top">
+            <a class="logo footer__logo" href="#">
+                <img class="logo__icon" src="./images/logo-icon.png" alt="logo">
+            </a>
+            <nav class="navigation footer__navigation">
+                <ul class="navigation__list footer__navigation__list">
+                    <li class="navigation__item">
+                        <a class="navigation__link navigation__link--active" href="index.html">Strona główna</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link navigation__link--white" href="onas.html">O nas</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link navigation__link--white" href="projekty.html">Projekty</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link navigation__link--white" href="instalacja.html">Instalacja</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link navigation__link--white" href="kontakt.html">Kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="btn btn--dark">
                 <span class="btn__text">Oddzwoń</span>
             </button>
         </div>
@@ -112,7 +117,7 @@
         </div>
 
     <!-- todo модальное окно   -->
-        <div class="modal-calculator">
+        <!-- <div class="modal-calculator">
             <button> <img src="./images/close-svg.svg" alt=""> </button>
             <img src="./images/modal-third-svg.svg" alt="галочка">
             <h2 class="modal-calculator__title"> Dziękuję za twoją prośbę </h2>
@@ -120,7 +125,7 @@
             <button class="btn">
                 <span> Ok</span>
             </button>
-        </div>
+        </div> -->
     </footer>
 </body>
 

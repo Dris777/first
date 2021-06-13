@@ -17,24 +17,24 @@
             </address>
             <ul class="wrapper-top__list">
                 <li class="wrapper-top__item">
-                    <img class="wrapper-top__icon" src="./images/mail-svg.svg" alt="мыло">
+                    <svg class="wrapper-top__icon" > <use href="./images/sprite.svg#icon-mail-svg"></use> </svg>
                     <a class="wrapper-top__link" href="mailto:"> dorotapawezka@gmail.com</a>
                 </li>
                 <li class="wrapper-top__item">
-                    <img class="wrapper-top__icon" src="./images/telephone-svg.svg" alt="телефон">
-                    <a class="wrapper-top__link" href="tel">+48695716531</a>
+                    <svg class="wrapper-top__icon"><use xlink:href="./images/sprite.svg#icon-telephone-svg"></use></svg>
+                    <a class="wrapper-top__link wrapper-top__link--medium" href="tel">+48695716531</a>
                 </li>
             </ul>
         </div>
         <!-- нижний блок шапки -->
         <div class="wrapper-bot">
             <a class="logo" href="">  
-                <img class="logo__icon" src="./images/logo__icon.png" alt="тут картинка">
+                <img class="logo__icon" src="./images/logo-icon.png" alt="тут картинка">
             </a>
             <nav class="navigation">
                 <ul class="navigation__list">
                 <li class="navigation__item"> 
-                    <a class="navigation_link navigation__link-active" href="index.html">Strona główna</a>
+                    <a class="navigation__link navigation__link--active" href="index.html">Strona główna</a>
                 </li>
                 <li class="navigation__item"> 
                     <a class="navigation__link" href="onas.html">O nas</a>
@@ -54,8 +54,8 @@
     </header>
     <main class="main">
         <section class="start-screen">
-            <img src="./images/bg-indexhtml.png" alt="">
-            <h1 class="start-screen__title">
+            <img class="start-screen__icon" src="./images/bg-indexhtml.jpg" alt="">
+            <h1 class="start-screen__title start-screen__title--first">
             Panele Fotowoltaiczne
             </h1>
             <p class="start-screen__subtitle">
@@ -65,12 +65,12 @@
                 <span class="btn__text">Obliczyć koszt</span>
             </button>
             <button class="btn-scroll">
-                <svg width="16px" height="20px"></svg>
+                <svg class="btn-scroll__icon" > <use xlink:href="./images/sprite.svg#scroll"></use></svg>
             </button>
         </section>
 
         <section class="content">
-            <img class="content__img" src="./images/html__main-icon.png" alt="домик">
+            <img class="content__img" src="./images/html-main-icon.jpg" alt="домик">
 
             <div class="main-content">
                 <h2 class="main-content__title">
@@ -94,28 +94,28 @@
     <footer class="footer">
         <div class="wrap-top">
             <a class="logo footer__logo" href="#" >
-                <img class="logo__icon" src="./images/logo__icon.png" alt="logo">
+                <img class="logo__icon" src="./images/logo-icon.png" alt="logo">
             </a>
             <nav class="navigation footer__navigation">
-            <ul class="navigation__list footer__navigation__list">
+            <ul class="navigation__list  ">
                 <li class="navigation__item">
-                    <a class="navigation__link" href="index.html">Strona główna</a>
+                    <a class="navigation__link navigation__link--active" href="index.html">Strona główna</a>
                 </li>
                 <li class="navigation__item">
-                    <a class="navigation__link" href="onas.html">O nas</a>
+                    <a class="navigation__link navigation__link--white" href="onas.html">O nas</a>
                 </li>
                 <li class="navigation__item">
-                    <a class="navigation__link" href="projekty.html">Projekty</a>
+                    <a class="navigation__link navigation__link--white" href="projekty.html">Projekty</a>
                 </li>
                 <li class="navigation__item">
-                    <a class="navigation__link" href="instalacja.html">Instalacja</a>
+                    <a class="navigation__link navigation__link--white" href="instalacja.html">Instalacja</a>
                 </li>
                 <li class="navigation__item">
-                    <a class="navigation__link" href="kontakt.html">Kontakt</a>
+                    <a class="navigation__link navigation__link--white" href="kontakt.html">Kontakt</a>
                 </li>
             </ul>
             </nav>
-            <button class="btn btn-dark"> 
+            <button class="btn btn--dark"> 
                 <span class="btn__text">Oddzwoń</span> 
             </button>
         </div>
@@ -125,7 +125,7 @@
         </div>
 
         <!-- todo модальное окно   -->
-        <div class="modal-calculator">
+        <!-- <div class="modal-calculator">
             <button> <img src="./images/close-svg.svg" alt=""> </button>
             <img src="./images/modal-third-svg.svg" alt="галочка">
             <h2 class="modal-calculator__title"> Dziękuję za twoją prośbę </h2>
@@ -133,7 +133,7 @@
             <button class="btn">
                 <span> Ok</span>
             </button>
-        </div>
+        </div> -->
     </footer>
 </body>
 </html>
