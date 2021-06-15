@@ -3,24 +3,28 @@
   src: url(../fonts/gilroy-bold.ttf);
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Gilroy';
   src: url(../fonts/gilroy-regular.ttf);
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Gilroy';
   src: url(../fonts/gilroy-medium.ttf);
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Gilroy';
   src: url(../fonts/gilroy-semibold.ttf);
   font-weight: 600;
   font-style: normal;
+  font-display: swap;
 }
 * {
   margin: 0;
@@ -36,7 +40,7 @@
 /* !index.html */
 /* !Header */
 /* !header top side */
-.wrapper-top {
+.wrapper--top {
   background-color: #20242d;
 }
 
@@ -49,10 +53,14 @@
   color: #ffffff;
   text-decoration: none;
 }
-.wrapper-top__list {
+.wrapper__list {
   list-style: none;
 }
-.wrapper-top__link {
+.wrapper__icon {
+  width: 14px;
+  height: 14px;
+}
+.wrapper__link {
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -62,22 +70,17 @@
   color: #ffffff;
   text-decoration: none;
 }
-.wrapper-top__link--medium {
+.wrapper__link--medium {
   font-weight: 500;
-}
-.wrapper-top__icon {
-  width: 14px;
-  height: 14px;
 }
 
 /*  !header bottom side */
-.wrapper-bot {
+.wrapper--bot {
   background-color: #ffffff;
 }
 .navigation__list {
   list-style-type: none;
 }
-
 .navigation__link {
   font-family: Gilroy;
   font-size: 14px;
@@ -105,12 +108,11 @@
   text-align: center;
   color: #ffffff;
 }
-
-/* .start-screen__icon {
-  box-shadow: 0px 4px 4px;
-  background-color: rgba(0, 0, 0, 0.25);
-} */
-
+.start-screen_title--second {
+  font-size: 48px;
+  line-height: 97%;
+  color: #ffffff;
+}
 .start-screen__subtitle {
   font-family: Gilroy;
   font-style: normal;
@@ -128,7 +130,12 @@
   background: #ff7129;
   box-shadow: 0px 4px 28px rgba(255, 113, 41, 0.29);
 }
-
+.btn--dark {
+  background-color: #20242d;
+  border: 1px solid #ff7129;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 28px rgba(255, 113, 41, 0.67);
+}
 .btn__text {
   font-family: Gilroy;
   font-style: normal;
@@ -178,12 +185,6 @@
   color: #ffffff;
 }
 
-.btn--dark {
-  background-color: #20242d;
-  border: 1px solid #ff7129;
-  box-sizing: border-box;
-  box-shadow: (0px 4px 28px rgba(255, 113, 41, 0.67));
-}
 .wrap-bot__link {
   font-family: Gilroy;
   font-style: normal;
@@ -195,12 +196,6 @@
 }
 
 /* !onas.html */
-
-.start-screen_title--second {
-  font-size: 48px;
-  line-height: 97%;
-  color: #ffffff;
-}
 
 .content__subtitle {
   font-family: Gilroy;
@@ -221,7 +216,7 @@
   color: #20242d;
 }
 
-.gallery__botton {
+.gallery__button {
   width: 56px;
   height: 56px;
   border-radius: 50%;
@@ -230,4 +225,8 @@
 .gallery__icon {
   width: 32px;
   height: 32px;
+}
+
+.hidden {
+  display: none;
 }

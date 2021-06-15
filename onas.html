@@ -6,60 +6,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Strona główna</title>
+    <title>onas</title>
 </head>
 
 <body>
     <!-- ! Шапка -->
     <header class="header">
         <!-- верхний блок шапки -->
-        <div class="wrapper-top">
-            <address class="main-address">
-                <a class="main-addres__link" href="https://goo.gl/maps/dMAG4Qt1BvaufG799 " target="_blank">Dąbrówka
-                    Wielkopolska, ul. Główna 53, 66-210 Zbąszynek</a>
-            </address>
-            <ul class="wrapper-top__list">
-                <li class="wrapper-top__item">
-                    <svg class="wrapper-top__icon">
-                        <use href="./images/sprite.svg#icon-mail-svg"></use>
-                    </svg>
-                    <a class="wrapper-top__link" href="mailto:"> dorotapawezka@gmail.com</a>
-                </li>
-                <li class="wrapper-top__item">
-                    <svg class="wrapper-top__icon">
-                        <use xlink:href="./images/sprite.svg#icon-telephone-svg"></use>
-                    </svg>
-                    <a class="wrapper-top__link" href="tel">+48695716531</a>
-                </li>
-            </ul>
-        </div>
-        <!-- нижний блок шапки -->
-        <div class="wrapper-bot">
-            <a class="logo" href="">
-                <img class="logo__icon" src="./images/logo-icon.png" alt="тут картинка">
-            </a>
-            <nav class="navigation">
-                <ul class="navigation__list">
-                    <li class="navigation__item">
-                        <a class="navigation__link navigation__link--active" href="index.html">Strona główna</a>
+        <div class="container">
+            <div class="wrapper wrapper--top">
+                <address class="main-address">
+                    <a class="main-addres__link" href="https://goo.gl/maps/dMAG4Qt1BvaufG799 " target="_blank">Dąbrówka
+                        Wielkopolska, ul. Główna 53, 66-210 Zbąszynek</a>
+                </address>
+                <ul class="wrapper__list ">
+                    <li class="wrapper__item ">
+                        <svg class="wrapper__icon ">
+                            <use href="./images/sprite.svg#icon-mail-svg"></use>
+                        </svg>
+                        <a class="wrapper__link " href="mailto::test@test.test"> dorotapawezka@gmail.com</a>
                     </li>
-                    <li class="navigation__item">
-                        <a class="navigation__link" href="onas.html">O nas</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a class="navigation__link" href="projekty.html">Projekty</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a class="navigation__link" href="instalacja.html">Instalacja</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a class="navigation__link" href="kontakt.html">Kontakt</a>
+                    <li class="wrapper__item ">
+                        <svg class="wrapper__icon ">
+                            <use xlink:href="./images/sprite.svg#icon-telephone-svg"></use>
+                        </svg>
+                        <a class="wrapper__link wrapper__link--medium" href="tel:+48695716531">+48695716531</a>
                     </li>
                 </ul>
-            </nav>
+            </div>
+            <!-- нижний блок шапки -->
+            <div class="wrapper wrapper--bot">
+                <a class="logo" href="./index.html">
+                    <img class="logo__icon" src="./images/logo-icon.png" alt="тут картинка" width="131px" height="34px">
+                </a>
+                <nav class="navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__item">
+                            <a class="navigation__link navigation__link--active" href="index.html">Strona główna</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="onas.html">O nas</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="projekty.html">Projekty</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="">Instalacja</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="">Kontakt</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
-
+    <!-- main -->
     <main class="main">
         <section class="start-screen start-screen--second">
             <img src="./images/bg-aboutus.jpg" alt="домик">
@@ -68,6 +70,7 @@
             </h1>
         </section>
         <section class="content content--second">
+            <h2 class="hidden ">0</h2>
             <p class="content__subtitle ">Jako firma Foton-Tech zapewniamy kompleksową obsługę od zaprojektowania systemu poprzez dostarczanie urządzeń
                 po ich
                 instalację oraz przyłączenie do sieci.
@@ -81,15 +84,14 @@
             </p>
         </section>
     </main>
-
     <!-- ! Подвал  -->
     <footer class="footer">
-        <div class="wrap-top">
+        <div class="wrap wrap--top">
             <a class="logo footer__logo" href="#">
                 <img class="logo__icon" src="./images/logo-icon.png" alt="logo">
             </a>
             <nav class="navigation footer__navigation">
-                <ul class="navigation__list footer__navigation__list">
+                <ul class="navigation__list  ">
                     <li class="navigation__item">
                         <a class="navigation__link navigation__link--active" href="index.html">Strona główna</a>
                     </li>
@@ -100,10 +102,10 @@
                         <a class="navigation__link navigation__link--white" href="projekty.html">Projekty</a>
                     </li>
                     <li class="navigation__item">
-                        <a class="navigation__link navigation__link--white" href="instalacja.html">Instalacja</a>
+                        <a class="navigation__link navigation__link--white" href="">Instalacja</a>
                     </li>
                     <li class="navigation__item">
-                        <a class="navigation__link navigation__link--white" href="kontakt.html">Kontakt</a>
+                        <a class="navigation__link navigation__link--white" href="">Kontakt</a>
                     </li>
                 </ul>
             </nav>
@@ -111,20 +113,22 @@
                 <span class="btn__text">Oddzwoń</span>
             </button>
         </div>
-        <div class="wrap-bot">
+        <div class="wrap wrap--bot">
             <a class="wrap-bot__link" href=""> Polityka prywatności</a>
             <a class="wrap-bot__link" href=""> Ochrona danych osobowych</a>
         </div>
-
-    <!-- todo модальное окно   -->
+    
+        <!-- todo модальное окно   -->
         <!-- <div class="modal-calculator">
-            <button> <img src="./images/close-svg.svg" alt=""> </button>
-            <img src="./images/modal-third-svg.svg" alt="галочка">
-            <h2 class="modal-calculator__title"> Dziękuję za twoją prośbę </h2>
-            <p class="modal-calculator__subtitle">Nasz menedżer wkrótce się z Tobą skontaktuje</p>
-            <button class="btn">
-                <span> Ok</span>
-            </button>
+            <button>
+                <img src="./images/close-svg.svg" alt="">
+             </button>
+                <img src="./images/modal-third-svg.svg" alt="галочка">
+                <h2 class="modal-calculator__title"> Dziękuję za twoją prośbę </h2>
+                <p class="modal-calculator__subtitle">Nasz menedżer wkrótce się z Tobą skontaktuje</p>
+                <button class="btn btn--calculator">
+                    <span> Ok</span>
+                </button>
         </div> -->
     </footer>
 </body>
