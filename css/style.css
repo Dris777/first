@@ -118,6 +118,9 @@ ul {
 /* !main */
 .main-wrapper {
   background-image: url(../images/bg-indexhtml.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .start-screen__title {
   font-family: Gilroy;
