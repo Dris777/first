@@ -68,7 +68,7 @@
             <div class="container main__container">
                 <span class="main__decor main__decor--left">SOLAR</span>
                 <span class="main__decor main__decor--right">ENERGY</span>
-                <section class="start-screen">
+                <section class="start-screen start-screen--first">
                     <h1 class="start-screen__title start-screen__title--first">
                     Panele Fotowoltaiczne
                     </h1>
@@ -86,7 +86,7 @@
             </div>
         </div>
         <div class="container">
-            <section class="content">
+            <section class="content content--first">
                 <img class="content__img" src="./images/html-main-icon.jpg" alt="домик">
                 <div class="main-content">
                     <span class="main-content__decor">info</span>
@@ -146,17 +146,26 @@
         </div>
 
         <!-- todo модальное окно   -->
-        <!-- <div class="modal-calculator">
-            <button> 
-                <img src="./images/close-svg.svg" alt=""> 
+        <div class="modal">
+            <button class="modal__btn" type="button"> 
+                <svg class="modal__icon" ><use xlink:href="./images/sprite.svg#icon-close__black"></use></svg>
             </button>
-            <img src="./images/modal-third-svg.svg" alt="галочка">
-            <h2 class="modal-calculator__title"> Dziękuję za twoją prośbę </h2>
-            <p class="modal-calculator__subtitle">Nasz menedżer wkrótce się z Tobą skontaktuje</p>
-            <button class="btn btn--calculator">
-                <span> Ok</span>
+            <h2 class="modal__title"> Oddzwoń </h2>
+            <p class="modal__subtitle">Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą, aby odpowiedzieć na Twoje<br> pytania.</p>
+            <form class="modal__form">
+                <label class="modal__label" for="">
+                    <span class="modal__label modal__label--text">Twoje imię</span>
+                    <input class="modal__input" type="text" name="username" placeholder="Wprowadź swoje imię">
+                </label>
+                <label class="modal__label" for="">
+                    <span class="modal__label modal__label--text">Telefon</span>
+                    <input class="modal__input" type="number" placeholder="Wprowadź telefon">
+                </label>
+            </form>
+            <button class="modal__btn--down">
+                <span class="modal__btn--text">Zadzwoń</span>
             </button>
-        </div> -->
+        </div>
     </footer>
 </body>
 </html>

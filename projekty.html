@@ -41,13 +41,14 @@
         <div class="wrapper wrapper--white">
             <div class="container">
                 <div class="wrapper wrapper--bot">
-                    <a class="logo" href="./index.html">
+                    <a class="logo header__logo" href="./index.html">
                         <img class="logo__icon" src="./images/logo-icon.png" alt="тут картинка" width="131px" height="34px">
                     </a>
-                    <nav class="navigation">
+                    <nav class="header__navigation">
                         <ul class="navigation__list">
                             <li class="navigation__item">
-                                <a class="navigation__link navigation__link--active" href="index.html">Strona główna</a>
+                                <a class="navigation__link navigation__link--active header-navigation__link"
+                                    href="index.html">Strona główna</a>
                             </li>
                             <li class="navigation__item">
                                 <a class="navigation__link" href="onas.html">O nas</a>
@@ -70,24 +71,27 @@
     <!-- main -->
     <main class="main">
         <section class="gallery">
+            <span class="gallery__decor">GAllery</span>
             <div class="container">
             <h1 class="gallery__title">
                 Projekty
             </h1>
-            <button class="gallery__button">
-                <svg class="gallery__icon " width="32px" height="32px"> <use xlink:href="./images/sprite.svg#icon-gallery__left"> </use> </svg>
-            </button>
-            <figure class="gallery__wrapper">
-                <img class="gallery__img" src="./images/bg-projekty.jpg" alt="фото с галереи">
-                <figcaption class="gallery__text">
-                    1/40
-                </figcaption>
-            </figure>
-            <button class="gallery__button">
-                <svg class="gallery__icon " width="32px" height="32px">
-                    <use xlink:href="./images/sprite.svg#icon-gallery__right"> </use>
-                </svg>
-            </button>
+            <div class="gallery__wrap">
+                <button class="gallery__button">
+                    <svg class="gallery__icon " width="32px" height="32px"> <use xlink:href="./images/sprite.svg#icon-gallery__left"> </use> </svg>
+                </button>
+                <figure class="gallery__wrapper">
+                    <img class="gallery__img" src="./images/bg-projekty.jpg" alt="фото с галереи">
+                    <figcaption class="gallery__text">
+                        <span class="gallery__text--bold">1</span><span class="gallery__text--grey">/40</span>
+                    </figcaption>
+                </figure>
+                <button class="gallery__button">
+                    <svg class="gallery__icon " width="32px" height="32px">
+                        <use xlink:href="./images/sprite.svg#icon-gallery__right"> </use>
+                    </svg>
+                </button>
+            </div>
             </div>
         </section>
     </main>
@@ -122,9 +126,8 @@
                 </button>
             </div>
         </div>
-    
-        <div class="wrap wrap--bot">
-            <div class="container">
+        <div class="container">
+            <div class="wrap wrap--bot">
                 <a class="wrap-bot__link" href=""> Polityka prywatności</a>
                 <a class="wrap-bot__link" href=""> Ochrona danych osobowych</a>
             </div>
