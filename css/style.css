@@ -388,8 +388,8 @@ ul {
 .modal__form {
   display: flex;
 }
-.modal__form:last-child {
-  margin-left: 20px;
+.modal__form:first-child {
+  margin-right: 50px;
 }
 .modal__label--text {
   display: block;
@@ -400,6 +400,9 @@ ul {
   line-height: 16px;
   color: #7b7e85;
   margin-bottom: 12px;
+}
+.modal__label--first {
+  margin-right: 30px;
 }
 .modal__input {
   width: 327px;
