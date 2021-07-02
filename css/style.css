@@ -28,13 +28,17 @@
 }
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 ul {
   padding: 0;
 }
-
+body {
+  font-family: 'Gilroy';
+}
 .container {
-  width: 1600px;
+  max-width: 1600px;
   padding-left: 50px;
   padding-right: 50px;
   margin-left: auto;
@@ -263,6 +267,7 @@ ul {
   padding-right: 200px;
   padding-top: 132px;
   padding-bottom: 115px;
+  box-sizing: border-box;
 }
 .main-content {
   position: relative;
@@ -351,6 +356,10 @@ ul {
   background-color: #ffffff;
   /* width: 800px;
   height: 516px; */
+  display: none;
+}
+.modal-show {
+  display: block;
 }
 .modal__btn {
   position: absolute;
