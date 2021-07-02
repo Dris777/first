@@ -345,21 +345,34 @@ body {
 }
 
 /* ! modal*/
+@keyframes fadeIn {
+  0% {
+    transform: translate(-50%, -2000px);
+  }
+  50% {
+    transform: translate(-50%, 0%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
 .modal {
   position: absolute;
-  left: 458px;
-  top: 253px;
+  left: 50%;
+  top: 50%;
   padding-left: 58px;
   padding-right: 58px;
   padding-top: 95px;
   padding-bottom: 72px;
   background-color: #ffffff;
-  /* width: 800px;
-  height: 516px; */
   display: none;
+  transform: translate(-50%, -50%);
 }
 .modal-show {
   display: block;
+  animation-name: fadeIn;
+  animation-duration: 1s;
 }
 .modal__btn {
   position: absolute;
