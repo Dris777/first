@@ -542,7 +542,7 @@ body {
 }
 .gallery__decor {
   position: absolute;
-  left: 241px;
+  left: 174px;
   top: 55px;
   font-family: Gilroy;
   font-style: normal;
@@ -561,7 +561,7 @@ body {
   font-size: 48px;
   line-height: 1;
   color: #20242d;
-  margin-left: 218px;
+  margin-left: 151px;
   margin-bottom: 77px;
   border-left: 1px solid #ff7129;
   padding-left: 16px;
@@ -605,4 +605,71 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #7b7e85;
+}
+
+.swiper-slide {
+  opacity: 0.5;
+}
+
+.swiper-slide img {
+  width: 100%;
+}
+
+.swiper-slide-active {
+  width: 64.3% !important;
+  margin: 0 160px;
+  opacity: 1;
+}
+
+.swiper-button-prev {
+  left: 13%;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #ff7129;
+  box-shadow: 0px 4px 28px rgba(255, 113, 41, 0.29);
+}
+
+.swiper-button-prev::after {
+  content: '';
+  display: block;
+}
+
+.swiper-button-next::after {
+  content: '';
+  display: block;
+}
+
+.swiper-button-next {
+  right: 13%;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #ff7129;
+  box-shadow: 0px 4px 28px rgba(255, 113, 41, 0.29);
+}
+.swiper-button__icon {
+  width: 32px;
+  height: 32px;
+}
+.swiper-container {
+  padding-bottom: 54px;
+}
+
+.swiper-pagination {
+  bottom: 0;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: #7b7e85;
+}
+
+.swiper-pagination-current {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  color: #000000;
 }
