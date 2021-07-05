@@ -219,6 +219,7 @@ body {
   color: #ffffff;
   border-left: 1px solid #ff7129;
   padding-left: 16px;
+  margin-left: 43px;
 }
 .start-screen__subtitle {
   font-family: Gilroy;
@@ -500,7 +501,7 @@ body {
 }
 .main__decor--second {
   position: absolute;
-  left: 173px;
+  left: 217px;
   top: 131px;
   font-family: Gilroy;
   font-style: normal;
@@ -514,8 +515,8 @@ body {
 }
 .content--second {
   padding-top: 80px;
-  padding-left: 268px;
-  padding-right: 266px;
+  padding-left: 192px;
+  /* padding-right: 266px; */
   padding-bottom: 184px;
   background-image: url(../images/bg-2block.png);
   background-size: 640px 640px;
@@ -531,7 +532,7 @@ body {
   color: #20242d;
 }
 .content__subtitle--right {
-  margin-left: 66px;
+  margin-left: 105px;
 }
 
 /* !projecty.html */
@@ -672,4 +673,48 @@ body {
   font-weight: 600;
   line-height: 24px;
   color: #000000;
+}
+
+.decor-line {
+  content: '';
+  background-color: #3b4e7c;
+  opacity: 0.15;
+  width: 1px;
+  height: 100%;
+}
+.decor-line--left {
+  position: absolute;
+  top: 99%;
+  height: 89%;
+}
+.decor-line--center {
+  position: absolute;
+  top: 99%;
+  left: 53%;
+  height: 89%;
+}
+.decor-line--right {
+  position: absolute;
+  top: 99%;
+  right: 10%;
+  height: 89%;
+}
+
+.content--second .decor-line--left {
+  position: absolute;
+  top: 450px;
+  left: 15%;
+  height: 505px;
+}
+.content--second .decor-line--center {
+  position: absolute;
+  top: 450px;
+  left: 51%;
+  height: 505px;
+}
+.content--second .decor-line--right {
+  position: absolute;
+  top: 450px;
+  right: 13%;
+  height: 505px;
 }
